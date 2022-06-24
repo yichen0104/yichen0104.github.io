@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="一个不平凡的学期，在平凡中匆匆收尾。这段令人印象深刻的时光也该写点东西总结。   学习算法（Intro to Algorithms）和软件原理（Principles of Software）两门专业课，一门理论一门实践刚好形成互补。最小生成树、动态规划、NP问题、多态和设计类型在未来也有相当多的应用场合；线性代数（Linear Algebra）则是纯粹作为未来上机器学习的前置课程，内容以及教授的板">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写在Spring 2020结束之际">
+<meta property="og:url" content="http://example.com/2020/05/23/wrapping-up-spring-2020/index.html">
+<meta property="og:site_name" content="Blog NJC6102HDK">
+<meta property="og:description" content="一个不平凡的学期，在平凡中匆匆收尾。这段令人印象深刻的时光也该写点东西总结。   学习算法（Intro to Algorithms）和软件原理（Principles of Software）两门专业课，一门理论一门实践刚好形成互补。最小生成树、动态规划、NP问题、多态和设计类型在未来也有相当多的应用场合；线性代数（Linear Algebra）则是纯粹作为未来上机器学习的前置课程，内容以及教授的板">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-23T13:40:00.000Z">
+<meta property="article:modified_time" content="2022-06-23T10:37:04.747Z">
+<meta property="article:author" content="yichen0104">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>写在Spring 2020结束之际</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/yichen0104">项目</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://space.bilibili.com/17028413">bilibili</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/2022/06/23/update-2022/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2019/10/25/git-branch-usage/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2020/05/23/wrapping-up-spring-2020/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&text=写在Spring 2020结束之际"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&is_video=false&description=写在Spring 2020结束之际"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=写在Spring 2020结束之际&body=Check out this article: http://example.com/2020/05/23/wrapping-up-spring-2020/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&name=写在Spring 2020结束之际&description=&lt;p&gt;一个不平凡的学期，在平凡中匆匆收尾。这段令人印象深刻的时光也该写点东西总结。  &lt;/p&gt;
+&lt;h1 id=&#34;学习&#34;&gt;&lt;a href=&#34;#学习&#34; class=&#34;headerlink&#34; title=&#34;学习&#34;&gt;&lt;/a&gt;学习&lt;/h1&gt;&lt;p&gt;算法（Intro to Algorithms）和软件原理（Principles of Software）两门专业课，一门理论一门实践刚好形成互补。最小生成树、动态规划、NP问题、多态和设计类型在未来也有相当多的应用场合；线性代数（Linear Algebra）则是纯粹作为未来上机器学习的前置课程，内容以及教授的板书都相当抽象，所幸靠看书+请教大神挺了过来；声乐基础（Fundamentals of Music &amp;amp; Sound）各种奇奇怪怪的作业实在占据了不少时间。尽管简单易懂，这种耗时耗力还要拍抖音的奇葩“水课”还是放到以后再上会更好。&lt;br&gt;身边更多的是拿到教授推荐信、绩点拉满的学神，自己并没有什么值得骄傲的资本。未来还有更高阶的课程去挑战，现在也只是刚为它们打好基础。&lt;/p&gt;
+&lt;h1 id=&#34;研究&#34;&gt;&lt;a href=&#34;#研究&#34; class=&#34;headerlink&#34; title=&#34;研究&#34;&gt;&lt;/a&gt;研究&lt;/h1&gt;&lt;p&gt;二月初RPI IDEA开放了一项整理国内抗击疫情物资的研究，由于面试时表现平平遗憾落选。期末结束后这个部门又放出了好几项暑假research，其中有一项是关于美国新冠疫情下学校复工的。和负责人视频后了解到这是开发一个可视化面板，其中后端用的是R，即便没有先前经验上手也不成问题。面试无异于自我介绍和拉拉家常，不过这次自己格外注重谈吐，和负责人聊了好些简历上做项目的经验。几天后确认进入，成功如愿以偿。&lt;br&gt;RPI本科生研究被单独算作一个叫URP的title，在CS专业课程中可以当Capstone。这样的话未来选课就不必满足特定的方向，没有诸如理论算法、系统软件等专门的课程方向限制。因此这次研究最后算了学分记在暑假学期上，充实阅历的同时还能拉一波绩点。  &lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2020/05/23/wrapping-up-spring-2020/&t=写在Spring 2020结束之际"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text">学习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6"><span class="toc-number">2.</span> <span class="toc-text">研究</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%9F%E6%B4%BB"><span class="toc-number">3.</span> <span class="toc-text">生活</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9E%E5%9B%BD"><span class="toc-number">4.</span> <span class="toc-text">回国</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        写在Spring 2020结束之际
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">yichen0104</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-05-23T13:40:00.000Z" itemprop="datePublished">2020-05-23</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>一个不平凡的学期，在平凡中匆匆收尾。这段令人印象深刻的时光也该写点东西总结。  </p>
+<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>算法（Intro to Algorithms）和软件原理（Principles of Software）两门专业课，一门理论一门实践刚好形成互补。最小生成树、动态规划、NP问题、多态和设计类型在未来也有相当多的应用场合；线性代数（Linear Algebra）则是纯粹作为未来上机器学习的前置课程，内容以及教授的板书都相当抽象，所幸靠看书+请教大神挺了过来；声乐基础（Fundamentals of Music &amp; Sound）各种奇奇怪怪的作业实在占据了不少时间。尽管简单易懂，这种耗时耗力还要拍抖音的奇葩“水课”还是放到以后再上会更好。<br>身边更多的是拿到教授推荐信、绩点拉满的学神，自己并没有什么值得骄傲的资本。未来还有更高阶的课程去挑战，现在也只是刚为它们打好基础。</p>
+<h1 id="研究"><a href="#研究" class="headerlink" title="研究"></a>研究</h1><p>二月初RPI IDEA开放了一项整理国内抗击疫情物资的研究，由于面试时表现平平遗憾落选。期末结束后这个部门又放出了好几项暑假research，其中有一项是关于美国新冠疫情下学校复工的。和负责人视频后了解到这是开发一个可视化面板，其中后端用的是R，即便没有先前经验上手也不成问题。面试无异于自我介绍和拉拉家常，不过这次自己格外注重谈吐，和负责人聊了好些简历上做项目的经验。几天后确认进入，成功如愿以偿。<br>RPI本科生研究被单独算作一个叫URP的title，在CS专业课程中可以当Capstone。这样的话未来选课就不必满足特定的方向，没有诸如理论算法、系统软件等专门的课程方向限制。因此这次研究最后算了学分记在暑假学期上，充实阅历的同时还能拉一波绩点。  </p>
+<span id="more"></span>
+<h1 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h1><p>居家生活两个月后才发现这种生活格外枯燥无聊，好在可以和两位室友日常聊聊，才能愉快度过这漫长的时光，不至于自闭的同时也增加了不少奇怪的知识。<br>四月中旬跟风抢到了一台Switch，因此也开始入坑动物森友会和塞尔达传说。果然还是这种开放世界+非线性探索游戏最令自己满意，比起自力更生的Minecraft多了剧情挑战，刷玩后还能当当老流氓到处炸鱼。这也应该是自己的第一次主机体验，N社游戏的各种体感操作玩得实在不亦乐乎。<br><del>任天堂就TM是世界的主宰！</del>  </p>
+<h1 id="回国"><a href="#回国" class="headerlink" title="回国"></a>回国</h1><p>现在飞往中国的航班屈指可数，学校也没有确切通知秋季学习的安排。先脑补一下怎么飞好了。<br>直航买不起也买不到，首先排除；其次便是第三国转机，NRT或ICN应该能走，LHR或申根区貌似有美签转机也不是问题。联程现在基本没戏，美国大城市-&gt;转机点-&gt;中国目的地两张机票只能分开买。要是能订到统一航空联盟/有行李直挂的航司那最好不过。反正怎么都得隔离十四天，能不能到NKG根本不必考虑。只要别摊上扔行李那种事就好。<br>时运不济，自求多福吧！</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/yichen0104">项目</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://space.bilibili.com/17028413">bilibili</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text">学习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6"><span class="toc-number">2.</span> <span class="toc-text">研究</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%9F%E6%B4%BB"><span class="toc-number">3.</span> <span class="toc-text">生活</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9E%E5%9B%BD"><span class="toc-number">4.</span> <span class="toc-text">回国</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2020/05/23/wrapping-up-spring-2020/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&text=写在Spring 2020结束之际"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&is_video=false&description=写在Spring 2020结束之际"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=写在Spring 2020结束之际&body=Check out this article: http://example.com/2020/05/23/wrapping-up-spring-2020/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&title=写在Spring 2020结束之际"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2020/05/23/wrapping-up-spring-2020/&name=写在Spring 2020结束之际&description=&lt;p&gt;一个不平凡的学期，在平凡中匆匆收尾。这段令人印象深刻的时光也该写点东西总结。  &lt;/p&gt;
+&lt;h1 id=&#34;学习&#34;&gt;&lt;a href=&#34;#学习&#34; class=&#34;headerlink&#34; title=&#34;学习&#34;&gt;&lt;/a&gt;学习&lt;/h1&gt;&lt;p&gt;算法（Intro to Algorithms）和软件原理（Principles of Software）两门专业课，一门理论一门实践刚好形成互补。最小生成树、动态规划、NP问题、多态和设计类型在未来也有相当多的应用场合；线性代数（Linear Algebra）则是纯粹作为未来上机器学习的前置课程，内容以及教授的板书都相当抽象，所幸靠看书+请教大神挺了过来；声乐基础（Fundamentals of Music &amp;amp; Sound）各种奇奇怪怪的作业实在占据了不少时间。尽管简单易懂，这种耗时耗力还要拍抖音的奇葩“水课”还是放到以后再上会更好。&lt;br&gt;身边更多的是拿到教授推荐信、绩点拉满的学神，自己并没有什么值得骄傲的资本。未来还有更高阶的课程去挑战，现在也只是刚为它们打好基础。&lt;/p&gt;
+&lt;h1 id=&#34;研究&#34;&gt;&lt;a href=&#34;#研究&#34; class=&#34;headerlink&#34; title=&#34;研究&#34;&gt;&lt;/a&gt;研究&lt;/h1&gt;&lt;p&gt;二月初RPI IDEA开放了一项整理国内抗击疫情物资的研究，由于面试时表现平平遗憾落选。期末结束后这个部门又放出了好几项暑假research，其中有一项是关于美国新冠疫情下学校复工的。和负责人视频后了解到这是开发一个可视化面板，其中后端用的是R，即便没有先前经验上手也不成问题。面试无异于自我介绍和拉拉家常，不过这次自己格外注重谈吐，和负责人聊了好些简历上做项目的经验。几天后确认进入，成功如愿以偿。&lt;br&gt;RPI本科生研究被单独算作一个叫URP的title，在CS专业课程中可以当Capstone。这样的话未来选课就不必满足特定的方向，没有诸如理论算法、系统软件等专门的课程方向限制。因此这次研究最后算了学分记在暑假学期上，充实阅历的同时还能拉一波绩点。  &lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2020/05/23/wrapping-up-spring-2020/&t=写在Spring 2020结束之际"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2019-2022
+    yichen0104
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/yichen0104">项目</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://space.bilibili.com/17028413">bilibili</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
